@@ -1,0 +1,144 @@
+SHELL SCRIPTING IMPORTANT CODES
+
+BASIC SCRIPT
+
+#!/bin/bash
+
+echo "Hello"
+
+--------------------------------
+
+ARITHMETIC
+
+a=10
+b=20
+
+sum=$((a+b))
+
+echo $sum
+
+--------------------------------
+
+IF ELSE
+
+if [ $a -gt $b ]
+then
+    echo "A greater"
+else
+    echo "B greater"
+fi
+
+--------------------------------
+
+FOR LOOP
+
+for i in 1 2 3
+do
+    echo $i
+done
+
+--------------------------------
+
+WHILE LOOP
+
+while [ $a -le 5 ]
+do
+    echo $a
+
+    a=$((a+1))
+done
+
+--------------------------------
+
+CASE
+
+case $ch in
+
+1) echo "ONE" ;;
+
+2) echo "TWO" ;;
+
+*) echo "INVALID" ;;
+
+esac
+
+--------------------------------
+
+COMMAND LINE ARGUMENTS
+
+echo $1
+echo $2
+
+--------------------------------
+
+FUNCTIONS
+
+function add()
+{
+    echo "Function"
+}
+
+add
+
+--------------------------------
+
+ARRAYS
+
+arr=(10 20 30)
+
+echo ${arr[0]}
+
+--------------------------------
+
+RUN SCRIPT
+
+chmod +x file.sh
+
+./file.sh
+
+--------------------------------
+
+COMPARISON OPERATORS
+
+-eq    equal
+-ne    not equal
+-gt    greater than
+-lt    less than
+-ge    greater equal
+-le    less equal
+
+--------------------------------
+
+STRING COMPARISON
+
+=      equal
+!=     not equal
+-z     string is empty
+-n     string is not empty
+
+--------------------------------
+
+FILE TEST OPERATORS
+
+-e file    true if file exists
+-f file    true if it is a regular file
+-d file    true if it is a directory
+-r file    true if file is readable
+-w file    true if file is writable
+-x file    true if file is executable
+
+--------------------------------
+
+LOGICAL OPERATORS
+
+-a    AND (example: [ $a -gt 10 -a $b -lt 20 ])
+-o    OR  (example: [ $a -gt 10 -o $b -lt 20 ])
+!     NOT (example: [ ! -e file.txt ])
+
+--------------------------------
+
+USER INPUT
+
+echo "Enter your name: "
+read name
+echo "Hello $name"

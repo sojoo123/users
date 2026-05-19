@@ -1,0 +1,35 @@
+LINUX COMMANDS
+
+pwd                 -> present working directory
+ls                  -> list files
+cd                  -> change directory
+mkdir               -> create directory
+rmdir               -> remove directory
+touch file.txt      -> create file
+rm file.txt         -> remove file
+cp a.txt b.txt      -> copy file
+mv a.txt b.txt      -> move/rename file
+cat file.txt        -> display file content
+clear               -> clear terminal
+man ls              -> manual/help
+
+ADVANCED COMMANDS
+
+grep "hello" file.txt
+find . -name file.txt
+chmod 755 file.txt
+ps
+top
+kill PID
+tar -cvf file.tar folder
+zip file.zip file.txt
+unzip file.zip
+df
+du
+ping google.com
+whoami
+
+IMPORTANT
+
+chmod +x file.sh
+./file.sh
